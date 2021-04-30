@@ -11,6 +11,7 @@ body {
     /*margin: 0 auto;*/
     padding: 10px;
     position: absolute;
+    /* top: 120px; */
     /*left: 50%;
     margin-left: -380px;*/
 }
@@ -24,11 +25,11 @@ body {
     list-style: none;
     padding-left: 0px;
     margin: 0px;
-    background: rgba(69, 155, 143, 0.8);
+    background: rgba(46, 34, 32, 0.3);
 }
 
 .schedule .tabs li {
-    width: 103px;
+    width: 105px;
     height: 80px;
     display: inline-block;
     font-size: 14px;
@@ -43,15 +44,15 @@ body {
 }
 
 .schedule .tabs li.active {
-    background: #459B8F;
+    background: #FB0605;
 }
 
 .schedule .tabs li.active:hover {
-    background: #459B8F;
+    background: #FB0605;
 }
 
 .schedule .tabs li:hover {
-    background: rgba(69, 155, 143, 0.6)
+    background: rgba(136, 162, 170, 0.6)
 }
 
 .schedule_content {
@@ -95,22 +96,53 @@ body {
     text-align: center;
 }
 
+.schedule_item div.left_grid {
+    width: 30%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .schedule_item div.time_grid {
     /*padding-right: 10px;*/
-    width: 30%;
+    /* width: 100%; */
     font-weight: 300;
     color: #AAAAAA;
-    display: inline-block;
+    /* display: inline-block; */
+}
+
+.schedule_item div.zone_grid {
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    font-weight: 300;
+    /* width: 100%; */
+    /* display: block; */
 }
 
 .schedule_item div.name_grid {
     overflow: hidden;
     text-overflow: ellipsis;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     width: 67%;
     display:inline-block;
     vertical-align: middle;
 }
+
+.schedule_item div.title_grid {
+    font-weight: 300;
+}
+
+.schedule_item div.description_grid {
+    font-size: 14px;
+}
+
+div.zone_bleue {
+    color: rgb(95, 172, 207);
+}
+
+div.zone_rose {
+    color: rgb(243, 174, 174);
+}
+
 
 @media (max-width: 730px) {
     .tab_content {
@@ -131,7 +163,7 @@ body {
 
 
 @media (max-width: 630px) {
-    .schedule_item div.time_grid {
+    .schedule_item div.left_grid {
         width: 37%;
     }
 
@@ -146,7 +178,7 @@ body {
         font-size: 14px;
     }
 
-    .schedule_item div.time_grid {
+    .schedule_item div.left_grid {
         width: 35%;
     }
 
@@ -156,7 +188,7 @@ body {
 }
 
 @media (max-width: 500px) {
-    .schedule_item div.time_grid {
+    .schedule_item div.left_grid {
         width: 40%;
     }
 
@@ -166,13 +198,13 @@ body {
 }
 
 @media (max-width: 400px) {
-    .schedule_item div.time_grid {
+    .schedule_item div.left_grid {
         width: 95%;
+        text-align: center;
     }
 
     .schedule_item div.name_grid {
         width: 95%;
+        text-align: center;
     }
 }
-
-

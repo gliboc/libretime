@@ -16,20 +16,17 @@
 
 <div class="wrapper">
 
-    <div class="bck_cover"></div>
+    <div class="top_band"><img src="css/radio-page/img/logo-aeradio.jpg"></div>
 
-    <?php if ($this->stationLogo === DEFAULT_LOGO_PLACEHOLDER) {
-        echo "<a href='#' class='logo'><img src='".DEFAULT_LOGO_FILE."'></a>";
-    } else {
-        echo "<a href='#' class='logo'><img src='data:image/png;base64," . $this->stationLogo . "'></a>";
-    } ?>
+    <div class="bck_cover"></div>
 
     <?php if ($this->displayLoginButton): ?>
         <div class='login-btn'>
-            <a href='/login' target='_parent'>
+            <p><a href='/login' target='_parent'>
                 <span><?php echo _('Login'); ?></span>
                 <span class='login-img'></span>
-            </a>
+            </a></p>
+            <p><a href="mailto:contact@aeradio.fr">Contact</a></p>
         </div>
     <?php endif; ?>
 
