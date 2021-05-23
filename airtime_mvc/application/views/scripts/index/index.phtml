@@ -37,7 +37,51 @@
 
     <div id="tab-2" class="about_us tab_content">
         <h1><?php echo $this->escape($this->stationName) ?></h1>
-        <p><?php echo $this->escape($this->stationDescription) ?></p>
+        <div class="zone_blanche">
+            <h2>Zone blanche</h2>
+            <h3>Documentaire&emsp;Témoignage&emsp;Archive&emsp;Interview</h3>
+            <p>En zone blanche s’invite la parole, le signifiant. Y sont déposées les traces des activités qui gravitent autour de l’engagement artistique de l’AEradio – enregistrements, captations en direct d’ateliers ou de conférences, discussions, événements divers. En cela, la zone blanche est en partie fondée sur le modèle du flux continu, de ce qui est en train. On y trouve aussi ce qui a été, ce qui a annoncé, raté, mûri.</p>
+
+            <blockquote cite="Samuel Beckett">Tout jadis. Jamais rien d’autre. D’essayé. De raté. N’importe. Essayer encore. Rater encore. Rater Mieux.</blockquote>
+
+            <p>
+            Ces archives ne sont pas considérées comme les reliquats d’activités artistiques, mais bien comme les données qui invitent, qui fondent l’écoute. L’archive est un commencement (Arkhè = l’origine, le Premier Principe). Leur consignation confère à l’auditeur un pouvoir discursif dont les enjeux ne sont pas la construction d’une narration univoque, mais l’exploration et l’agencement libre d’une pluralité de signes. Ces témoignages, individuels ou collectifs, sont la mémoire prothétique (Derrida) de l’AEradio, constituée de réussis historiques, d’essais radiogéniques ou de documents décontextualisés, mis en regard des expériences plastiques proposées par la radio. 
+            </p>
+        </div>
+
+        <div class="zone_bleue">
+            <h2>Zone bleue</h2>
+            <h3>
+                Flux continu&emsp;Recherche en situation
+            </h3>
+            <p>
+            La zone bleue de l’AEradio est celle du flux continu. Sans programmation détaillée, elle donne à vivre un temps brouillé, et fait l’exercice d’une attitude radiophonique où l’écoute se déplace librement entre les sphères passives et actives. Elle n’accapare pas l’attention de l’auditeur, tantôt la relance ou échoue à le faire, mise sur son détachement, son inconstance. Des micro-événements peuvent apparaître, qui bouleversent ou (re)synchronisent la perception. La fabrication de ces « silences », productions continues et égales de matière sonore, est le lieu de rencontre fortuite avec des propositions plastiques rendues quasi-anonymes. </p>
+
+            <blockquote cite="Rudolf Arnheim">La radio est un hôte permanent et, comme on sait, on ne fait pas de manières avec ce type d’invités : la vie suit son cours exactement comme s’ils n’étaient pas là.
+            </blockquote>
+
+            <p>
+                Sans devenir synonyme de désengagement, la zone bleue de l’AEradio est celle d’une habituation à l’information sonore. Intégrée elle aussi à l’espace de vie de l’auditeur, son appropriation est libre, intime. Elle abandonne le son signifiant, et en cela, elle permet l’exploration du « caractère sonore » (Max Neuhaus), strate auditive innée, non culturelle, de signification, qui s’ajoute au langage.
+            </p>
+        </div>
+
+        <div class="zone_rose">
+            <h2>Zone rose</h2>
+            <h3>
+            Œuvres
+            </h3>
+            <p>
+                La zone rose de l’AEradio est exclusivement dédiée à la diffusion d’œuvres sonores plastiques. Sa programmation détaillée – artiste, durée, protocole d’écoute - invite à une écoute attentive qui intégrera le champ domestique, sans pour autant dénaturer les données du quotidien. Les œuvres d’art sonores confrontées à cet espace intime appellent à quitter le régime de la distraction pour celui d’une écoute consciente. Cette écoute, « anonyme » dans la réception, n’est pas contaminée par les attentes, les codes et les contraintes sociales des lieux publics.
+            </p>
+    
+            <p>
+                Accompagnées de protocoles de diffusion, ces œuvres proposent au spectateur/auditeur de construire sa propre écoute, de prendre en compte les données « préparatoires » qui accompagne cette mise en œuvre, de comprendre les données plastiques qui peuvent altérer, déplacer, constituer des zones, des seuils dans l’espace de la pièce sonore.
+            </p>
+            
+            <blockquote cite="Patrick Romieu">
+                Les lieux les plus prestigieux de l’action sonnante, les acteurs sonores les plus compétents, la transparence acoustique des climats écoutés ne constituent pas a priori des espaces heuristiquement ou pédagogiquement plus féconds que d’autres.
+            </blockquote>
+        </div>
     </div>
 
     <div id="tab-3" class="login tab_content">
@@ -64,68 +108,7 @@
             <div id="jquery_jplayer_1" class="jp-player">
             </div>
             <div class="podcast_bck">
-            <div id="jp_container_1" class="jp-audio">
-                <div class="jp-type-playlist">
-
-                    <div class="current-track track-overflow"><?php echo _("Now Playing:") ?><span class="track-overflow"></span></div>
-                    <div class="jp-gui jp-interface">
-                        <div class="playbar playbar-buttons">
-                        <ul class="jp-controls rss-buttons">
-                            <li class="ui-corner-all jp-play">
-                                <span class="icon-play icon-white" tabindex="1"><?php /*echo _("play") */?></span>
-                            </li>
-
-                            <li class="ui-corner-all jp-pause">
-                                <span class="icon-pause icon-white" tabindex="1"><?php /*echo _("pause") */?></span>
-                            </li>
-                            <li class="ui-corner-all jp-stop">
-                                <span class="icon-stop icon-white" tabindex="1"><?php /*echo _("stop") */?></span>
-                            </li>
-                        </ul>
-                        </div>
-                        <div class="playbar playbar-progress">
-                        <div class="jp-time-block">
-                            <div class="jp-progress">
-                                <div class="jp-seek-bar">
-                                    <div class="jp-play-bar"></div>
-                                </div>
-                            </div>
-                            <div class="jp-time-holder">
-                                <div class="jp-current-time"></div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <div class="playbar playbar-progress">
-                        <div class="jp-volume-block">
-                            <div class="jp-mute">
-                                <span class="ui-icon" tabindex="1" title="mute"><?php /*echo _("mute") */?></span>
-                            </div>
-                            <div class="jp-unmute">
-                                <span class="ui-icon" tabindex="1" title="unmute"><?php /*echo _("unmute") */?></span>
-                            </div>
-                            <div class="jp-volume-bar">
-                                <div class="jp-volume-bar-value"></div>
-                            </div>
-                            <div class="jp-volume-max">
-                                <span class="ui-icon" tabindex="1" title="max volume"><?php /*echo _("max volume") */?></span>
-                            </div>
-                        </div>
-                        </div>
-                        </ul>
-
-                    </div>
-
-                    <div class="rss-tracks">
-                        <ul class="jp-playlist">
-                        </ul>
-                    </div>
-
-                    <ul class="pagination">
-                    </ul>
-                </div>
-
-            </div>
+                
             </div>
 
             <script type="text/javascript">
