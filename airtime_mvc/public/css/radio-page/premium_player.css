@@ -151,6 +151,10 @@ body {
         background-size: 100%;
     }
 
+    .play.cont_btn.pause {
+        background-size: 60%;
+    }
+
     .bottom_bar p.now_playing {
         font-size: 18px;
         margin: 10px 10px;
