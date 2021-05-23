@@ -52,7 +52,7 @@ body {
 }
 
 .schedule .tabs li:hover {
-    background: rgba(136, 162, 170, 0.6)
+    background: rgb(243, 174, 174, 0.6)
 }
 
 .schedule_content {
