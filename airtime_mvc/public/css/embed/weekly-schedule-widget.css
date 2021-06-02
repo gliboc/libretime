@@ -178,6 +178,10 @@ div.zone_rose {
         font-size: 14px;
     }
 
+    .schedule_item .row {
+        display: -webkit-inline-box;
+    }
+    
     .schedule_item div.left_grid {
         width: 35%;
     }
