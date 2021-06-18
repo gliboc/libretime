@@ -133,6 +133,7 @@ body {
 
 .schedule_item div.description_grid {
     font-size: 14px;
+    text-transform: initial;
 }
 
 div.zone_bleue {

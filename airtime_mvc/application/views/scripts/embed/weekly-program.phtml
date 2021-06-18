@@ -27,8 +27,14 @@
                 {{else}}
                 {{#each shows}}
                 <div class="row">
-                    <div class="time_grid">{{show_start_hour}} - {{show_end_hour}}</div>
-                    <div class="name_grid">{{{name}}}</div>
+                    <div class="left_grid">
+                        <div class="time_grid">{{show_start_hour}} - {{show_end_hour}}</div>
+                        <div class="zone_grid {{zone}}">{{genre}}</div> 
+                    </div>
+                    <div class="name_grid">
+                        <div class="title_grid">{{name}}</div>
+                        <div class="description_grid">{{description}}</div> 
+                    </div>
                 </div>
                 {{/each}}
                 {{/if}}
@@ -53,14 +59,29 @@
         var start_date = new Date(element.starts_timestamp*1000);
         var end_date = new Date(element.ends_timestamp*1000);
         // Check date of show so we know where to assign it to
-        var format_start_date = start_date.getFullYear() + "-" + (start_date.getMonth()+1) + "-" + start_date.getDate();
+        var format_start_date = start_date.getFullYear() + "-" + (start_date.getMonth()+1) + "-" + start_date.getDate()
+        // AE radio special
+        var zone = false;
+        var zone_name = element.genre;
+        // var zone_name = 'zone bleue';
+        // var description = '';
+        if (zone_name.includes('bleue')) {
+            var zone = 'zone_bleue';} 
+        if (zone_name.includes('blanche')) { 
+            var zone = 'zone_blanche'; }
+        if (zone_name.includes('rose')) {
+            var zone = 'zone_rose'; }
+        // if (!zone) { genre = ""; }
         // Assign show to correct location
         if (importSchedule["weekDays"][format_start_date] !== undefined) {
             importSchedule["weekDays"][format_start_date]["shows"].push(
                 {
                     "show_start_hour": start_date.toLocaleTimeString([], { hour: 'numeric', minute : 'numeric' }),
                     "show_end_hour": end_date.toLocaleTimeString([], { hour: 'numeric', minute : 'numeric' }),
-                    "name": element.name
+                    "name": element.name,
+                    "zone": zone,
+                    "genre": zone_name,
+                    // "description": element.description
                 });
         }
     });
